@@ -1,10 +1,13 @@
 :root {
     --color-white: #ffffff;
+    --color-black: #000000;
     --color-slate-100: #f1f5f9;
     --color-blue-500: #3b82f6;
     --color-red-500: #ef4444;
+    --color-red-600: #dc2626;
     --color-green-100: #d1fae5;
     --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
 }
 
 /* Layout */
@@ -14,6 +17,14 @@
 
 .justify-center {
     justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
 }
 
 .grid { 
@@ -33,6 +44,10 @@
     max-width: 64rem; 
 }
 
+.max-w-sm {
+    max-width: 24rem;
+}
+
 .w-full { 
     width: 100%; 
 }
@@ -45,8 +60,16 @@
     gap: 1rem; 
 }
 
+.p-2 {
+    padding: 0.5rem;
+}
+
 .p-3 { 
     padding: 0.75rem; 
+}
+
+.p-6 {
+    padding: 1.5rem;
 }
 
 .p-8 { 
@@ -89,6 +112,17 @@
     margin-bottom: 2rem; 
 }
 
+.fixed {
+    position: fixed;
+  }
+  
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 /* Color */
 .bg-white { 
     background-color: var(--color-white); 
@@ -110,8 +144,20 @@
     background-color: var(--color-green-100); 
 }
 
+.bg-black {
+    background-color: var(--color-black);
+}
+  
+.bg-opacity-50 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .text-white { 
     color: var(--color-white); 
+}
+
+.text-black {
+    color: var(--color-black);
 }
 
 .text-blue-500 { 
@@ -126,6 +172,14 @@
 .text-3xl { 
     font-size: 1.875rem; 
     line-height: 2.25rem; 
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.font-semibold {
+    font-weight: 600;
 }
 
 .font-bold { 
@@ -167,6 +221,11 @@
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
 }
 
+.shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
 /* Transition */
 .transition { 
     transition: all 0.3s ease; 
@@ -186,6 +245,14 @@
     background-color: var(--color-blue-500); 
 }
 
+.hover\:bg-red-600:hover {
+    background-color: var(--color-red-600);
+}
+
+.hover\:bg-gray-400:hover {
+    background-color: #9ca3af; 
+}
+
 /* Utilities */
 .hidden { 
     display: none; 
@@ -193,6 +260,10 @@
 
 .block { 
     display: block; 
+}
+
+.z-50 {
+    z-index: 50;
 }
 
 /* Responsive */
@@ -203,6 +274,14 @@
 
     .sm\:col-span-2 { 
         grid-column: span 2 / span 2; 
+    }
+
+    .sm\:w-1\/2 {
+        width: 50%;
+    }
+
+    .sm\:w-1\/3 {
+        width: 33.333%;
     }
   }
 
