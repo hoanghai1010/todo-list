@@ -3,6 +3,7 @@
     --color-black: #000000;
     --color-slate-100: #f1f5f9;
     --color-blue-500: #3b82f6;
+    --color-blue-600: #2563eb;
     --color-red-500: #ef4444;
     --color-red-600: #dc2626;
     --color-green-100: #d1fae5;
@@ -21,6 +22,10 @@
 
 .justify-between {
     justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
 }
 
 .items-center {
@@ -52,6 +57,10 @@
     width: 100%; 
 }
 
+.w-96 {
+    width: 24rem;
+}
+  
 .gap-3 { 
     gap: 0.75rem; 
 }
@@ -100,6 +109,10 @@
     padding-bottom: 0.5rem; 
 }
 
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
 .mb-4 { 
     margin-bottom: 1rem; 
 }
@@ -112,9 +125,18 @@
     margin-bottom: 2rem; 
 }
 
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .fixed {
     position: fixed;
-  }
+}
   
 .inset-0 {
     top: 0;
@@ -136,6 +158,10 @@
     background-color: var(--color-blue-500); 
 }
 
+.bg-blue-600 {
+    background-color: var(--color-blue-600);
+}
+  
 .bg-red-500 { 
     background-color: var(--color-red-500); 
 }
@@ -178,6 +204,11 @@
     font-size: 1.125rem;
 }
 
+.text-xl {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 .font-semibold {
     font-weight: 600;
 }
@@ -211,6 +242,10 @@
     border-color: var(--color-gray-300); 
 }
 
+.rounded {
+    border-radius: 0.5rem;
+}
+
 /* Table */
 .table-auto { 
     table-layout: auto; 
@@ -224,6 +259,10 @@
 .shadow-xl {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
                 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Transition */
@@ -250,7 +289,22 @@
 }
 
 .hover\:bg-gray-400:hover {
-    background-color: #9ca3af; 
+    background-color: var(--color-gray-400); 
+}
+
+.hover\:bg-blue-600:hover {
+    background-color: var(--color-blue-600)
+}
+
+/* Components */
+.modal-box {
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 1rem; 
 }
 
 /* Utilities */
@@ -264,6 +318,10 @@
 
 .z-50 {
     z-index: 50;
+}
+
+.fixed {
+    position: fixed;
 }
 
 /* Responsive */
